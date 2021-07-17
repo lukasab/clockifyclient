@@ -162,9 +162,7 @@ class APIObject:
         instance of this class, initialized to the values in dict_in
 
         """
-        return cls(
-            obj_id=cls.get_item(dict_in=dict_in, key="id"),
-        )
+        return cls(obj_id=cls.get_item(dict_in=dict_in, key="id"),)
 
 
 class NamedAPIObject(APIObject):
@@ -237,8 +235,9 @@ class TaskStub(Task):
 
 
 class TimeEntry(APIObject):
-    def __init__(self, obj_id, start, description="", project=None, task=None,
-                 end=None):
+    def __init__(
+        self, obj_id, start, description="", project=None, task=None, end=None
+    ):
         """
 
         Parameters

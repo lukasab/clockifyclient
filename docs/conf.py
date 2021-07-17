@@ -23,7 +23,7 @@ import sys
 
 sys.path.insert(0, os.path.abspath(".."))
 
-import clockify_api_client
+import clockify_api_client  # noqa
 
 # -- General configuration ---------------------------------------------
 

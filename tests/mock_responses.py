@@ -20,7 +20,7 @@ CURRENTLY_RUNNING_ENTRY_NOT_FOUND = RequestMockResponse(
 
 # calling get /workspaces
 GET_WORKSPACES = RequestMockResponse(
-    """[{"id": "12345", "name": "testuser", "hourlyRate": {"amount": 0, "currency": "USD"},           
+    """[{"id": "12345", "name": "testuser", "hourlyRate": {"amount": 0, "currency": "USD"},
          "memberships": [
           {"userId": "112424", "hourlyRate": null, "targetId": "123456",
            "membershipType": "WORKSPACE", "membershipStatus": "ACTIVE"}],
